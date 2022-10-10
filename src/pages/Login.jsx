@@ -1,5 +1,5 @@
 import Google from "../img/google.png";
-import Facebook from "../img/volvo-logo.png";
+import Volvo from "../img/volvo-logo.png";
 import Github from "../img/github.png";
 
 const Login = () => {
@@ -11,7 +11,7 @@ const Login = () => {
     window.open("https://github.com/login", "_self");
   };
 
-  const facebook = () => {
+  const cdsid = () => {
     window.open("https://sso-qa.api.volvocars.biz/auth", "_self");
   };
 
@@ -25,18 +25,18 @@ const Login = () => {
         <strong><h1>Welcome</h1></strong>
         </div>
         
-          <div className="loginButton google" onClick={google}>
+          {/* <div className="loginButton google" onClick={google}>
             <img src={Google} alt="" className="icon" />
             Google
+          </div> */}
+          <div className="loginButton cdsid" onClick={cdsid}>
+            <img src={Volvo} alt="" className="icon" />
+          Login with CDSID
           </div>
-          <div className="loginButton facebook" onClick={facebook}>
-            <img src={Facebook} alt="" className="icon" />
-            CDSID
-          </div>
-          <div className="loginGitHubButton github" onClick={github}>
+          {/* <div className="loginGitHubButton github" onClick={github}>
             <img src={Github} alt="" className="icon" />
             Github
-          </div>
+          </div> */}
         </div>
         {/* <div className="center">
           <div className="line" />
